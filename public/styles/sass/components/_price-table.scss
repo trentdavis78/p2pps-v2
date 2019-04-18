@@ -1,0 +1,91 @@
+
+.price-table__row__price {
+    background-color: $color-white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;  
+    width: 20%;
+    line-height: 1.2;
+    float: left;
+
+    &--cost {
+        font-size: 3rem;
+    }
+
+    &--reg {
+        color: $color-green;
+        box-shadow: 1rem 1rem 0 rgba($color-green, .3);
+    }
+    &--rush {
+        color: $color-yellow;
+        box-shadow: 1rem 1rem 0 rgba($color-yellow, .3);
+    }
+    &--priority {
+        color: $color-orange;
+        box-shadow: 1rem 1rem 0 rgba($color-orange, .3);
+    }
+    &--sameday {
+        color: $color-red;
+        box-shadow: 1rem 1rem 0 rgba($color-red, .3);
+    }
+}
+
+.price-table__row__desc {
+    float: left;
+    width: 65%;
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+    padding: .5rem 1rem;
+    color: $color-white;
+    font-weight: 700;
+    min-height: 6.5rem;
+    box-shadow: .75rem .75rem 0 rgba($color-black, .2);
+    font-size: 1.6rem;
+    &--reg {
+        background-color: $color-green;        
+    }
+    &--rush {
+        background-color: $color-yellow;
+    }
+    &--priority {
+        background-color: $color-orange;
+    }
+    &--sameday {
+        background-color: $color-red;
+        vertical-align: middle;
+    }
+} 
+.price-nav li {
+    margin: .25rem;
+}
+.nav-pills .nav-link {
+    background-color: $color-grey-light;
+}
+.nav-pills .nav-link.active {
+    background-color: $color-primary;
+}
+
+@media only screen and (max-width: 768px) {
+    .price-table__row__desc {
+        font-size: 1.2rem;
+        min-height: 5rem;
+        margin-top: 2rem;
+    }
+    .price-table__row__price {
+        padding: 2rem 1rem;
+        width: 29%;
+
+        &--cost {
+            font-size: 2.3rem;
+        }
+        &--text {
+            font-size: 1.2rem;
+            display: inline-block;
+            line-height: 1;
+            
+        }
+    }
+}

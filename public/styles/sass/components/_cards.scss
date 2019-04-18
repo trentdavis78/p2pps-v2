@@ -1,0 +1,106 @@
+.card-custom {
+    min-height: 41.3rem;
+    &__header {
+        background: $color-primary;
+        
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    &__body {
+        &--about {
+            font-size: 1.6rem;
+        }
+        &--home, &--other {
+            margin: 3rem;
+            & ul   {
+                list-style-type: disc;
+            }
+
+            & li {
+                color: $color-grey-medium;
+                font-weight: 500;                
+            }            
+        }
+
+        &--home {
+
+            & li {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+
+        &__img {
+           width: 100%;
+           text-align: center; 
+           &--home {
+                         
+            
+           }
+            
+        }  
+        
+        &--testimonial {
+            &-body {
+                min-height: 20rem;
+            }
+            &-image img {
+                border-radius: 50rem; 
+                float: left;
+                margin: .5rem;
+                min-width: 7.5rem;                
+            }
+        }
+
+        &--right-col {
+            font-size: 1.6rem;
+            & .contact-icons {
+                float: left;
+                margin-right: 1rem;
+                color: $color-primary;
+
+                & a {
+                    padding-left: .8rem;
+                }
+
+                &.email-icon {
+                    white-space: nowrap; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            & .address-icon::before {              
+                    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";               
+            }
+
+            & address {
+                float: left; 
+                margin-left: .5rem;                          
+            }
+            & .phone-icon::before {              
+                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f095";               
+            }
+            & .email-icon::before {              
+                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0e0";               
+            }
+            & .calendar-icon::before {              
+                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f073";        
+                padding-right: .8rem;       
+            }
+        }
+    } 
+    
+    &__footer {
+
+        h3 {
+            text-transform: uppercase;
+            color: $color-grey-medium;
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+    }
+
+}

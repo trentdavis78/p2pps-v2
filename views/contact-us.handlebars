@@ -1,0 +1,67 @@
+{{> header }}
+    <div class="jumbotron jumbotron-fluid jumbotron__header jumbotron__header--img jumbotron__header--img-contact">
+        <div class="container">
+            <div class="jumbotron__header__heading">
+                <h1 class="text-white jumbotron__header__heading--primary">Contact Us</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <main style="min-height:600px;">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 mt-3">
+                <div class="card card-custom">
+                    <div class="card-header card-custom__header text-white">
+                        Contact Us
+                    </div>
+                    <div class="card-body">
+                        <form class="" action="https://formspree.io/trentdavisinc@gmail.com" method="POST">
+                            <!-- form message -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="contact__msg" style="display: none">
+                                        <p>Your message was sent successfully.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end message -->
+
+                            <!-- form element -->
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input name="name" type="text" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input name="email" type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input name="phone" type="text" class="form-control" placeholder="Phone">
+                                </div>
+                                <div class="col-12 form-group">
+                                    <textarea name="message" class="form-control" rows="9" placeholder="Message"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <div class="g-recaptcha" data-sitekey="6LefepgUAAAAABVAlqv92opuQBt7RTjV7Bk-qhLn">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <input name="submit" type="submit" class="btn btn-theme btn-lg"
+                                        value="Send Message">
+                                </div>
+                            </div>
+                            <!-- end form element -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mt-3">
+                {{> right-col }}
+            </div>
+        </div>
+
+
+    </main>
+</div>
+{{> footer }}

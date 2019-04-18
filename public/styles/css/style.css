@@ -1,0 +1,412 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  animation: fadeIn 1.5s ease-out; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-image: url(../../images/bg.png);
+  background-repeat: repeat; }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a:link, a:visited {
+  color: #315870; }
+
+a:hover, a:active {
+  color: #3E69E1;
+  text-decoration: none; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #1d1d1d; }
+
+h2 {
+  font-size: 2.5rem; }
+
+.logo__text {
+  color: #315870;
+  font-family: Roboto, sans-serif;
+  line-height: 1; }
+  .logo__text--lg-primary, .logo__text--lg-secondary, .logo__text--sm-primary, .logo__text--sm-secondary {
+    display: block; }
+  .logo__text--lg-primary, .logo__text--sm-primary {
+    font-weight: 700;
+    border-bottom: 0.3rem solid #315870;
+    margin-left: -.5rem; }
+  .logo__text--lg-secondary, .logo__text--sm-secondary {
+    font-style: italic;
+    letter-spacing: .33rem;
+    padding-top: .3rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .logo__text--lg-primary {
+    font-size: 2.75rem; }
+  .logo__text--lg-secondary {
+    font-size: 1.7rem; }
+  .logo__text--sm-primary {
+    font-size: 2.4rem; }
+  .logo__text--sm-secondary {
+    font-size: 1.3rem; }
+
+.card-custom {
+  font-size: 2rem; }
+
+.blockquote {
+  font-size: 1.8rem; }
+
+.text-tiny {
+  font-size: 1.2rem; }
+
+.text-small {
+  font-size: 1.4rem; }
+
+.icon-lg {
+  font-size: 3.6rem; }
+
+@media only screen and (max-width: 600px) {
+  .blockquote {
+    font-size: 1.2rem; } }
+
+strong {
+  font-weight: 900; }
+
+.primary-color {
+  color: #315870; }
+
+.hidden {
+  display: none; }
+
+.navbar-custom {
+  padding: 2rem; }
+
+.navbar-nav .nav-item.nav-link {
+  color: #2C313F;
+  text-transform: uppercase;
+  font-weight: 700; }
+  .navbar-nav .nav-item.nav-link:hover {
+    color: #3E69E1; }
+  .navbar-nav .nav-item.nav-link:not(:last-child) {
+    margin-right: 2rem; }
+
+@media only screen and (max-width: 768px) {
+  .navbar-collapse {
+    margin-top: 2rem; } }
+
+.logo__img--sm {
+  width: 6rem;
+  position: absolute;
+  top: .3rem; }
+
+.logo__img--lg {
+  position: absolute;
+  width: 12rem;
+  top: 0.5rem;
+  z-index: 2; }
+
+.logo__text--sm {
+  position: absolute;
+  top: 1rem;
+  left: 9rem; }
+
+.logo__text--lg {
+  position: absolute;
+  left: 17.5rem;
+  top: 1.5rem; }
+
+.footer {
+  background-color: #315870;
+  color: #fff;
+  overflow-x: hidden; }
+  .footer__col a:link,
+  .footer__col a:visited {
+    color: #fff;
+    transition: all 1s; }
+  .footer__col--1 {
+    padding: 5rem 0; }
+    .footer__col--1 a:hover,
+    .footer__col--1 a:active {
+      color: #3E69E1; }
+  .footer__col--2 {
+    text-align: center;
+    margin-top: 6rem;
+    padding-top: 3rem;
+    font-size: 1.4rem; }
+    .footer__col--2 a:hover,
+    .footer__col--2 a:active {
+      text-decoration: underline; }
+  .footer__col--3 {
+    padding: 3rem;
+    font-size: 1.4rem; }
+    .footer__col--3 h3 {
+      font-size: 2rem; }
+  .footer__col--4 {
+    padding: 2rem 0; }
+  .footer__row--2 {
+    border-top: 1px solid #4882a5; }
+  .footer__nav {
+    margin-top: 6rem; }
+    .footer__nav li {
+      display: inline;
+      font-size: 1.2rem; }
+      .footer__nav li:not(:last-child) {
+        margin-right: 2rem; }
+
+.btn-theme {
+  background: #315870;
+  color: #fff;
+  transition: all .3s; }
+  .btn-theme a:link, .btn-theme a:visited {
+    color: #fff; }
+  .btn-theme:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #3E69E1; }
+  .btn-theme a:hover {
+    text-decoration: none; }
+
+.card-custom {
+  min-height: 41.3rem; }
+  .card-custom__header {
+    background: #315870; }
+  .card-custom h2 {
+    font-size: 2rem; }
+  .card-custom__body--about {
+    font-size: 1.6rem; }
+  .card-custom__body--home, .card-custom__body--other {
+    margin: 3rem; }
+    .card-custom__body--home ul, .card-custom__body--other ul {
+      list-style-type: disc; }
+    .card-custom__body--home li, .card-custom__body--other li {
+      color: #7a7c84;
+      font-weight: 500; }
+  .card-custom__body--home li {
+    margin-bottom: 2.5rem; }
+  .card-custom__body__img {
+    width: 100%;
+    text-align: center; }
+  .card-custom__body--testimonial-body {
+    min-height: 20rem; }
+  .card-custom__body--testimonial-image img {
+    border-radius: 50rem;
+    float: left;
+    margin: .5rem;
+    min-width: 7.5rem; }
+  .card-custom__body--right-col {
+    font-size: 1.6rem; }
+    .card-custom__body--right-col .contact-icons {
+      float: left;
+      margin-right: 1rem;
+      color: #315870; }
+      .card-custom__body--right-col .contact-icons a {
+        padding-left: .8rem; }
+      .card-custom__body--right-col .contact-icons.email-icon {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+    .card-custom__body--right-col .address-icon::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f3c5"; }
+    .card-custom__body--right-col address {
+      float: left;
+      margin-left: .5rem; }
+    .card-custom__body--right-col .phone-icon::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f095"; }
+    .card-custom__body--right-col .email-icon::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f0e0"; }
+    .card-custom__body--right-col .calendar-icon::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f073";
+      padding-right: .8rem; }
+  .card-custom__footer h3 {
+    text-transform: uppercase;
+    color: #7a7c84;
+    font-weight: 600;
+    font-size: 1.6rem; }
+
+.jumbotron__header {
+  position: relative; }
+  .jumbotron__header__heading {
+    animation: moveInRight 1s ease-out;
+    position: absolute;
+    bottom: 10rem; }
+    .jumbotron__header__heading--primary {
+      font-size: 5rem; }
+  .jumbotron__header--img {
+    width: 100%;
+    height: 50rem;
+    background-size: cover; }
+    .jumbotron__header--img-home {
+      background-image: url(../../images/tx-flag.jpg); }
+    .jumbotron__header--img-sop {
+      background-image: url(../../images/court.jpg); }
+    .jumbotron__header--img-contact {
+      background-image: url(../../images/contact-us.jpg); }
+    .jumbotron__header--img-about {
+      background-image: url(../../images/pencil.jpg); }
+    .jumbotron__header--img-other {
+      background-image: url(../../images/chess.jpg); }
+
+@media only screen and (max-width: 750px) {
+  .jumbotron__header--img-home {
+    background-image: url(../../images/tx-flag-mobile.jpg); }
+  .jumbotron__header--img-contact {
+    background-image: url(../../images/contact-us-mobile.jpg); } }
+
+.price-table__row__price {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+  width: 20%;
+  line-height: 1.2;
+  float: left; }
+  .price-table__row__price--cost {
+    font-size: 3rem; }
+  .price-table__row__price--reg {
+    color: #217a3b;
+    box-shadow: 1rem 1rem 0 rgba(33, 122, 59, 0.3); }
+  .price-table__row__price--rush {
+    color: #cabd00;
+    box-shadow: 1rem 1rem 0 rgba(202, 189, 0, 0.3); }
+  .price-table__row__price--priority {
+    color: #ae7316;
+    box-shadow: 1rem 1rem 0 rgba(174, 115, 22, 0.3); }
+  .price-table__row__price--sameday {
+    color: #9b1512;
+    box-shadow: 1rem 1rem 0 rgba(155, 21, 18, 0.3); }
+
+.price-table__row__desc {
+  float: left;
+  width: 65%;
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+  padding: .5rem 1rem;
+  color: #fff;
+  font-weight: 700;
+  min-height: 6.5rem;
+  box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem; }
+  .price-table__row__desc--reg {
+    background-color: #217a3b; }
+  .price-table__row__desc--rush {
+    background-color: #cabd00; }
+  .price-table__row__desc--priority {
+    background-color: #ae7316; }
+  .price-table__row__desc--sameday {
+    background-color: #9b1512;
+    vertical-align: middle; }
+
+.price-nav li {
+  margin: .25rem; }
+
+.nav-pills .nav-link {
+  background-color: #eee; }
+
+.nav-pills .nav-link.active {
+  background-color: #315870; }
+
+@media only screen and (max-width: 768px) {
+  .price-table__row__desc {
+    font-size: 1.2rem;
+    min-height: 5rem;
+    margin-top: 2rem; }
+  .price-table__row__price {
+    padding: 2rem 1rem;
+    width: 29%; }
+    .price-table__row__price--cost {
+      font-size: 2.3rem; }
+    .price-table__row__price--text {
+      font-size: 1.2rem;
+      display: inline-block;
+      line-height: 1; } }

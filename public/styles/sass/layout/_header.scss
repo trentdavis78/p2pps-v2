@@ -1,0 +1,58 @@
+.navbar-custom {
+    padding: 2rem;
+} 
+
+.navbar-nav .nav-item.nav-link {
+    color: $color-primary-dark;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+        color: $color-primary-light;
+    }
+    
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        margin-top: 2rem;
+    }
+}
+
+
+.logo {
+
+    &__img {
+
+        &--sm {
+            width: 6rem;     
+            position: absolute; 
+            top: .3rem;
+        }
+
+        &--lg {
+            position: absolute; 
+            width:12rem; 
+            top:0.5rem; 
+            z-index: 2;
+        }
+    }
+
+    &__text {
+
+        &--sm {
+            position: absolute; 
+            top: 1rem;
+            left: 9rem;
+        }
+
+        &--lg {
+            position: absolute;
+            left: 17.5rem;
+            top: 1.5rem;
+        }
+    }
+}

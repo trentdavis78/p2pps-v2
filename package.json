@@ -1,0 +1,34 @@
+{
+  "name": "p2pps-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "compile:sass": "node-sass public/styles/sass/main.scss public/styles/css/style.css -w"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trentdavis78/p2pps-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trentdavis78/p2pps-v2/issues"
+  },
+  "homepage": "https://github.com/trentdavis78/p2pps-v2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql2": "^1.6.4",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.11",
+    "sequelize": "^4.41.2"
+  }
+}
