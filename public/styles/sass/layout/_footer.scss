@@ -67,3 +67,33 @@
         }
     }
 }
+
+@media only screen and (max-width: 750px) {
+
+    .footer {
+
+        &__col {
+
+            &--1 {
+                padding: 2rem 0;
+                text-align: center;
+
+            }
+
+            &--2 {
+
+                margin-top: 0;
+                padding-top: 3rem;
+            }
+
+            &--4 {
+                text-align: center;
+            }
+        }
+
+        &__nav {
+            margin-top: 0;
+        }
+    }
+
+}
