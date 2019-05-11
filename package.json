@@ -8,7 +8,6 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "compile:sass": "node-sass public/styles/sass/main.scss public/styles/css/style.css -w"
-    
   },
   "repository": {
     "type": "git",
@@ -28,6 +27,7 @@
     "express-handlebars": "^3.0.2",
     "mysql2": "^1.6.4",
     "node-sass": "^4.11.0",
+    "nodemailer": "^6.1.1",
     "nodemon": "^1.18.11",
     "sequelize": "^4.41.2"
   }
