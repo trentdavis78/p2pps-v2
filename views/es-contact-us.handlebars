@@ -1,0 +1,50 @@
+{{> header }}
+    <div class="jumbotron jumbotron-fluid jumbotron__header jumbotron__header--img jumbotron__header--img-contact">
+        <div class="container">
+            <div class="jumbotron__header__heading">
+                <h1 class="text-white jumbotron__header__heading--primary">Contact Us</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>Pole to Pole Process Servers, LLC</h3>
+        <ul>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> info@p2paustin.com</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Envíenos un correo electrónico</h3>
+        {{msg}}
+        <form method="POST" action="send">
+          <p>
+            <label>Nombre</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>Empresa</label>
+            <input type="text" name="company">
+          </p>
+          <p>
+            <label>Correo Electrónico</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label>Número de teléfono</label>
+            <input type="text" name="phone">
+          </p>
+          <p class="full">
+            <label>Mensaje</label>
+            <textarea name="message" rows="5"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Enviar</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+{{> footer }}

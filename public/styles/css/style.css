@@ -195,6 +195,15 @@ strong {
   left: 17.5rem;
   top: 1.5rem; }
 
+.language {
+  position: relative; }
+  .language__flag {
+    height: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer; }
+    .language__flag:not(:last-child) {
+      margin-right: .5rem; }
+
 .footer {
   background-color: #315870;
   color: #fff;
@@ -244,6 +253,19 @@ strong {
     text-align: center; }
   .footer__nav {
     margin-top: 0; } }
+
+.right-col__img-container {
+  position: relative; }
+  .right-col__img-container__text {
+    color: #fff;
+    line-height: 1.2;
+    font-size: 2.4rem;
+    font-style: italic; }
+    .right-col__img-container__text--centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .btn-theme {
   background: #315870;

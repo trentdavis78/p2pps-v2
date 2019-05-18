@@ -56,3 +56,20 @@
         }
     }
 }
+
+.language {
+
+    position: relative;
+
+    &__flag {
+        height: 1.5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+
+    
+}

@@ -1,6 +1,35 @@
-$(document).ready(function(){
- 
-    var prices = {
+$(document).ready(function(){   
+   
+    if(!localStorage.lang) {
+        localStorage.setItem("lang", "");
+    } 
+    
+    function setLanguage(lang) {
+        localStorage.clear();
+        localStorage.setItem("lang", lang);
+        var pageURL = $(location).attr("href");
+        var i = pageURL.indexOf('?');
+        pageURL = pageURL.substring(0, i != -1 ? i : pageURL.length);
+        if(lang === "es"){
+            window.location.href = pageURL + "?lang=es";
+        } else {
+            window.location.href = pageURL;
+        }
+    }
+    $("#langEn").on("click", () => {
+        setLanguage("en");     
+    });
+    $("#langEs").on("click", () => {
+        setLanguage("es");       
+    });
+    $(document).on('click', '.nav-link', function () {
+        var href = $(this).attr("href");
+        var lang = localStorage.getItem("lang");
+        if(lang === "es") {
+            $(this).attr("href", href + "?lang=es");
+        }
+    });
+      var prices = {
         travis_wilco: {
             reg: 60,
             rush: 75,

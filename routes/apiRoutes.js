@@ -6,10 +6,9 @@ module.exports = function (app) {
             <h3>Contact Details</h3>
             <ul>
                 <li>Name: ${req.body.name}</li>
-                <li>Name: ${req.body.company}</li>
-                <li>Name: ${req.body.email}</li>
-                <li>Name: ${req.body.phone}</li>
-                <li>Name: ${req.body.name}</li>
+                <li>Company: ${req.body.company}</li>
+                <li>Email: ${req.body.email}</li>
+                <li>Phone: ${req.body.phone}</li>               
             </ul>
             <h3>Message</h3>
             <p>${req.body.message}</p>
@@ -23,8 +22,8 @@ module.exports = function (app) {
                 port: 587,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: process.env.SES_USR, // generated ethereal user
-                    pass: process.env.SES_PWD // generated ethereal password
+                    user: process.env.SES_USR, // SES username
+                    pass: process.env.SES_PWD // SES password
                 },
                 tls: {
                     rejectUnauthorized: false
