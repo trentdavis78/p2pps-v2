@@ -1,9 +1,14 @@
 $(document).ready(function(){   
    
-    if(!localStorage.lang) {
+    if(!localStorage.getItem('lang')) {
         localStorage.setItem("lang", "");
     } 
-    
+    let searchParams = new URLSearchParams(window.location.search);
+    if(searchParams.has('lang')){
+        var lang = searchParams.get('lang');
+        localStorage.clear();
+        localStorage.setItem("lang", lang);
+    }
     function setLanguage(lang) {
         localStorage.clear();
         localStorage.setItem("lang", lang);
